@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url('digital-7/digital-7.ttf') format('truetype');
+}
+
+body {
+    background-color: rgb(245, 249, 250);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 40px;
+    -webkit-user-select: none; /* Chrome, Safari, Edge */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.scoreboard {
+    width: 900px;
+    border: 3.5mm ridge rgb(31, 31, 31);
+    border-radius: 18px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    padding: 10px;
+    background-color:rgb(59, 59, 59);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#guest {
+    margin-top: 12px;
+    text-decoration: underline;
+    
+}
+
+#home {
+    margin-top: 12px;
+    text-decoration: underline;
+}
+
+.teams {
+    width: 290px;
+    text-align: center;
+    /*background-color: orange;*/
+}
+
+.scores {
+    /*background-color: green; */
+    border-radius: 18px;
+    border: 3.5mm ridge rgb(31, 31, 31);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'digital-7';
+}
+
+.fouls {
+    color: white;
+    font-size: 13px;
+}
+
+p {
+    text-align: center;
+    font-size: 140px;
+    color: rgb(255, 0, 0);
+    margin: 0;
+}
+
+.clock {
+    border: 3.5mm ridge rgb(31, 31, 31);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+    font-family: 'digital-7';
+}
+
+h5 {
+    margin-top: -20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    border: 2mm ridge rgb(31, 31, 31);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    font-size: 50px;
+    color: red;
+    font-family: 'digital-7';
+    
+}
+
+#timer {
+    font-size: 85px;
+}
+
+.info h4{
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    margin: 0;
+    border: 2mm ridge rgb(31, 31, 31);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 13px;
+    color: rgb(8, 228, 8);
+    font-family: 'digital-7';
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-right: 10px;
+    color: white;
+    background-color:rgb(78, 78, 78);
+    border-radius: 8px;
+    border: 3px solid black;
+    font-size: 17px;
+    padding: 2px 10px;
+}
+
+button:hover{
+    background-color: red;;
+}
+
+
+
+
+
+

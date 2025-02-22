@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+    <!-- Whole/ Main Scoreboard-->
+    <div class = "scoreboard">
+        <!--Main Div for Content Inside of Scoreboard-->
+        <div class = "content">
+            <!-- Home Team -->
+            <div class = "teams">
+                <h2 id = "home"> HOME </h2>
+                <div class = "scores">
+                    <p id = "homeScore" onclick="addPoint('homeScore')">0</p>
+                </div>
+            </div>
+
+            <!--Clock, Quarter, Fouls-->
+            <div class = "teams">
+                <div class = "clock">
+                    <p id = "timer" onclick = "toggleTimer()">12:00</p>
+                </div>
+                <div class = "info">
+                   <h4>PERIOD</h4>
+                   <h5 id = "quarter" onclick="changeQuarter()">0</h5>
+                </div>
+                <div class = "footer">
+                    <div>
+                        <b><p class = "fouls">FOULS</p></b>
+                        <h3 id = "homeFouls" onclick = "changeFouls('home')">0</h3>
+                    </div>
+                    <div>
+                        <b><p class = "fouls">FOULS</p></b>
+                        <h3 id = "guestFouls" onclick = "changeFouls('guest')">0</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!--Guest Team-->
+            <div class = "teams">
+                <h2 id = "guest"> GUEST</h2>
+                <div class = "scores">
+                    <p id = "guestScore" onclick="addPoint('guestScore')">0</p>
+                </div>
+            </div>
+        <!--Main Div for Content Inside of Scoreboard-->
+        </div>
+    <!-- Whole/ Main Scoreboard End-->
+    </div>
+    <div class = "button-container">
+        <button onclick = "resetTimer()">Reset Timer</button>
+        <button onclick = "resetPoints()">Reset Points</button>
+        <button onclick = "resetFouls()">Reset Fouls</button>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
